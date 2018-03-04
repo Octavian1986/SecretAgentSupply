@@ -1,0 +1,29 @@
+html {
+
+}
+
+/* logo */
+
+#logo {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+#logo img {
+
+}
+
+/* main banner */
+
+#main_banner {
+  background-image: url("../images/moto.jpeg");
+}
+
+
+
+
+
+/* navigation */
