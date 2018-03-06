@@ -75,6 +75,10 @@ body {
   justify-content: space-between;
 }
 
+#menu {
+  display: none;
+}
+
 nav {
   margin: 0.75rem 0;
 }
@@ -149,4 +153,30 @@ footer {
   height: 5rem;
   align-items: center;
   text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  #glasses {
+    display: none;
+  }
+
+  .product {
+    width: 42%;
+  }
+
+  .main_container {
+    margin: 0 0;
+  }
+
+  nav.desktop_vis {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #nav_box {
+    justify-content: center;
+  }
 }
