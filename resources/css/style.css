@@ -1,3 +1,7 @@
+/* To Do: Rems partially have to be different from the design sheet in order to match the scaling.
+  Change the code to make it fit.*/
+
+
 body {
   font-size: 18px;
   font-family: Helvetica;
@@ -45,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 9rem 0 0 0;
-  width: 20rem;
+  width: 26rem;
   background-color: black;
 }
 
@@ -155,6 +159,8 @@ footer {
   text-align: left;
 }
 
+/* media query with design adaptations for max-screen-width of 1024px */
+
 @media only screen and (max-width: 1024px) {
   #glasses {
     display: none;
@@ -165,6 +171,7 @@ footer {
   }
 
   .main_container {
+    width: 1024px;
     margin: 0 0;
   }
 
@@ -178,5 +185,70 @@ footer {
 
   #nav_box {
     justify-content: center;
+  }
+}
+
+/* media query with design adaptations for max-screen-width of 470px */
+
+@media only screen and (max-width: 470px) {
+  .main_container {
+    margin: 0 0;
+    width: 470px;
+  }
+
+  #main_banner {
+    height: 15.7rem;
+  }
+
+  #main_banner_box {
+    margin: 10rem 0 0 0;
+    width: 100%;
+  }
+
+  #main_banner_box h3 {
+    font-size: 0.77rem;
+    margin: 1rem 0 0 2rem;
+  }
+
+  #main_banner_box h1 {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  #product_box {
+    justify-content: center;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .footer_box {
+    justify-content: center;
+  }
+
+  nav.desktop_vis {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .locationtime_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .locationtime {
+    width: 92%;
   }
 }
